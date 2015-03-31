@@ -5,19 +5,6 @@ test-driven-nodejs-development
   - [Installation](#installation)
     - [NPM Install (npm)](#npm-install)
   - [Starting with mocha](#starting-with-mocha)
-    - [Bootstrap.js](#bootstrap.js)
-    - [Config.json](#Config.json)
-    - [plug.json](#plug.json)
-  - [Mongoose Domain and Modal](#mongoose-domain-n-modal)
-    - [mongooseDomain](#mongoose-domain)
-      - [Define User Domain](#define-user-domain)
-      - [User Modal](#user-modal)
-  - [How to define Routes ](#how-to-define-routes)
-    - [Route](#route)
-  - [How to use ECMA6 feature](#how-to-use-ecma6-feature)
-  - [Lets Build Together](#lets-build-together)
-  - [Revision History](#revision-history)
-
 #Introduction To Mocha#
 Mocha is a Javascript testing framework, which runs on nodejs and browser. It is mostly use to test synchronous and asynchronous Javascript code. Easy to use and it's also provides you simple test case results.
 
