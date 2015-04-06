@@ -2,7 +2,7 @@
  * Created by deepak on 17/3/15.
  */
 var mongoose = require('mongoose');
-//mongoose.connect('mongodb://localhost/test');
+mongoose.connect('mongodb://localhost/test');
 var should = require('should')
 var Cat = require('../db/cat');
 describe('hooks', function () {

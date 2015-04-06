@@ -37,6 +37,6 @@ CatSchema.statics.findQ = function (options) {
     )
     return defer.promise;
 };
-var CatModel = mongoose.model('Cat', CatSchema);
+var CatModel = mongoose.model('Cats', CatSchema);
 //Cat.index({name: 1}, {unique: true});
 module.exports = CatModel;

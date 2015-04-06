@@ -1,8 +1,8 @@
 /**
- * Created by deepak on 17/3/15.
- */
+* Created by deepak on 17/3/15.
+*/
 var mongoose = require('mongoose');
-//mongoose.connect('mongodb://localhost/test');
+mongoose.connect('mongodb://localhost/test');
 var should = require('should')
 var Cat = require('../db/cat');
 describe('Connection', function () {
@@ -11,7 +11,7 @@ describe('Connection', function () {
         , jane = new Cat({name: 'jane'});
 
     beforeEach(function (done) {
-        mongoose.connection.db.dropCollection('cats', function (err) {
+        Cat.remove({}, function (err) {
             console.log('collection dropped');
             Cat.create([tobi, loki, jane], done);
         });
@@ -26,4 +26,4 @@ describe('Connection', function () {
             })
         })
     })
-})
+});

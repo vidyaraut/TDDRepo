@@ -8,7 +8,7 @@ describe('Cat Modal', function () {
     describe('#create()', function () {
         it('should return cat when cat has created', function (done) {
             Cat.find({}).remove(function () {
-                var cat = new Cat({name: 'Deepak'});
+                var cat = new Cat({name: 'Billi'});
                 cat.save(function (error, cat) {
                     console.log('>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>><<<<<<<<<<<<<<<<<<<<<<<<<');
                     console.log('%j', cat);
