@@ -5,6 +5,7 @@ test-driven-nodejs-development
   - [Installation](#installation)
     - [NPM Install (npm)](#npm-install)
   - [Starting with mocha](#starting-with-mocha)
+  
 #Introduction To Mocha#
 Mocha is a Javascript testing framework, which runs on nodejs and browser. It is mostly use to test synchronous and asynchronous Javascript code. Easy to use and it's also provides you simple test case results.
 
@@ -18,7 +19,7 @@ $ npm install -g mocha
 Above command will install mocha globally to your npm environment.
 
 ##Starting with mocha##
-When you work on TDD(Test Driven Development), You need to take care of your project structure. Where you will put your test cases on all. I basically create a test folder where i put all test cases.
+When you work on TDD(Test Driven Development), You need to take care of your project structure. Where you will put your test cases on all. I have basically created a test folder where i put all test cases.
 ```bash
 $ mkdir test
 ```
@@ -60,6 +61,7 @@ describe('String', function(){
 $  npm install should --save-dev
 ```
 ```js
+var should = require('should')
 describe('Array', function(){
     describe('#indexOf()', function(){
         it('should return -1 when the value is not present', function(){
@@ -96,16 +98,22 @@ Development environment like nodejs, is async in nature. Mocha provides you such
 var should = require('should')
 describe('Array', function () {
     describe('#indexOf()', function () {
-        it('Test Case-1: should return -1 when the value is not present', function () {
-            [1, 2, 3].indexOf(5).should.equal(-1);
-            [1, 2, 3].indexOf(0).should.equal(-1);
+        it('Test Case-1: should return -1 when the value is not present', function (done) {
+            setTimeout(function () {
+                [1, 2, 3].indexOf(5).should.equal(-1);
+                [1, 2, 3].indexOf(0).should.equal(-1);
+                done();
+            }, 1000)
         });
     });
 });
 describe('String', function () {
     describe('#substring()', function () {
-        it('Test Case-2: should return -1 when the value is not present', function () {
-            'True Developer!! Testing is hardest thing to do...'.indexOf('developer').should.equal(-1);
+        it('Test Case-2: should return -1 when the value is not present', function (done) {
+            setTimeout(function () {
+                'True Developer!! Testing is hardest thing to do...'.indexOf('developer').should.equal(-1);
+                done();
+            }, 500);
         });
     });
 });
