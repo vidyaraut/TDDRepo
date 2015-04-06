@@ -208,7 +208,7 @@ describe('Connection', function () {
         , loki = new Cat({name: 'loki'})
         , jane = new Cat({name: 'jane'});
     beforeEach(function (done) {
-        mongoose.connection.db.dropCollection('cats', function (err) {
+        Cat.remove({}, function (err) {
             console.log('collection dropped');
             Cat.create([tobi, loki, jane], done);
         });
@@ -222,5 +222,5 @@ describe('Connection', function () {
             })
         })
     })
-})
+});
 ```
