@@ -1,7 +1,9 @@
 /**
- * Created by deepak on 17/3/15.
+ * Created by deepak.m.shrma@gmail.com on 17/3/15.
+ * Git: https://github.com/deepakshrma
  */
-var mongoose = require('mongoose');
+
+//var mongoose = require('mongoose');
 //mongoose.connect('mongodb://localhost/test');
 //var Cat = require('../db/cat');
 //describe('Cat Modal', function () {

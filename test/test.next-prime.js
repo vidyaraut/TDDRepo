@@ -1,3 +1,8 @@
+/**
+ * Created by deepak.m.shrma@gmail.com on 17/3/15.
+ * Git: https://github.com/deepakshrma
+ */
+
 var assert = require('assert')
     , nextPrime = require('./../index').nextPrime
     , asyncPrime = require('./../index').asyncPrime;

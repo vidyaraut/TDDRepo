@@ -1,6 +1,8 @@
-///**
-// * Created by deepak on 17/3/15.
-// */
+/**
+ * Created by deepak.m.shrma@gmail.com on 17/3/15.
+ * Git: https://github.com/deepakshrma
+ */
+
 //var should = require('should')
 //describe('Array', function () {
 //    describe('#indexOf()', function () {
